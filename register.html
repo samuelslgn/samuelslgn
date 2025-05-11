@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Control Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="frame">
+      <!-- Title Section -->
+      <div class="title">
+        <h1>Easy</h1>
+        <h2>Control</h2>
+        <p>Everything is under control</p>
+      </div>
+
+      <!-- Login Form Container -->
+      <div class="login-container">
+        <!-- Tabs -->
+        <div class="tabs">
+          <span>LOGIN</span>
+        </div>
+
+        <!-- Username Field -->
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter Username" />
+        </div>
+
+        <!-- Password Field -->
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter Password" />
+        </div>
+
+        <!-- Error Message -->
+        <div id="error-message" class="error-message">&nbsp;</div>
+
+        <!-- Submit Button -->
+        <div class="submit-btn" id="submitBtn">
+          <img src="assets/arrow_right.png" alt="Submit" />
+        </div>
+      </div>
+
+      <!-- Forgot Password Link -->
+      <div class="forgot-password">
+        <p>Forgot Password?</p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

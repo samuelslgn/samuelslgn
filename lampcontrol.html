@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Home Dashboard</title>
+    <link rel="stylesheet" href="lampcontrol.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <div class="frame">
+      
+        <!-- Header -->
+        <header class="header">
+          <div class="profile">
+            <div class="avatar">
+              <img src="assets/profile.png" alt="avatar" class="avatar-img" />
+            </div>
+            <div class="greeting">
+              <h2>Good //</h2>
+              <p>"RBL kok Ngoding"</p>
+            </div>
+          </div>
+          <div class="status-card">
+            <div class="status_condition">
+              <div class="info_condition">
+                <strong>Temperature</strong>
+                <span> 25°C</span>
+              </div>
+              <div class="info_condition">
+                <strong>Humidity</strong>
+                <span>30%</span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="total_device">
+            <div class="info_device">
+              <strong
+                ><i
+                  class="fas fa-lightbulb"
+                  style="font-size: 18px; color: gold"
+                ></i>
+                Lamps</strong
+              >
+              <span>4 Lamps</span>
+            </div>
+            <div class="info_device">
+              <strong
+                ><i
+                  class="fas fa-fan"
+                  style="font-size: 18px; color: skyblue"
+                ></i>
+                Air Cons</strong
+              >
+              <span>4 AC</span>
+            </div>
+          </div>
+        </header>
+
+      <main class="scrollable-content">
+        <!-- Device List -->
+        <main class="devices lamp-list">
+          <!-- Lamp Items -->
+          <div class="lamp-card">
+            <div class="lamp-info">
+              <img id="lampu1Image"   src="assets/bulb_off.png" class="lamp-icon" />
+              <div class="lamp-text">
+                <h3>GK1.101</h3>
+                <p>
+                  <span id="lampu1Dot" class="green-dot"></span>
+                  <span id="lampu1StatusText">ON</span>
+                </p>
+                
+              </div>
+            </div>
+            <label class="switch">
+              <input type="checkbox" data-location="lampu1"unchecked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+          <div class="lamp-card">
+            <div class="lamp-info">
+              <img id="lampu2Image"   src="assets/bulb_off.png" class="lamp-icon" />
+              <div class="lamp-text">
+                <h3>GK1.102</h3>
+                <p>
+                  <span id="lampu2Dot" class="green-dot"></span>
+                  <span id="lampu2StatusText">ON</span>
+                </p>
+              </div>
+            </div>
+            <label class="switch">
+              <input type="checkbox" data-location="lampu2" unchecked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+          <div class="lamp-card">
+            <div class="lamp-info">
+              <img id="lampu3Image"   src="assets/bulb_off.png" class="lamp-icon" />
+              <div class="lamp-text">
+                <h3>GK1.201</h3>
+                <p>
+                  <span id="lampu3Dot" class="green-dot"></span>
+                  <span id="lampu3StatusText">ON</span>
+                </p>
+              </div>
+            </div>
+            <label class="switch">
+              <input type="checkbox" data-location="lampu3" unchecked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+          <div class="lamp-card">
+            <div class="lamp-info">
+              <img id="lampu4Image"   src="assets/bulb_off.png" class="lamp-icon" />
+              <div class="lamp-text">
+                <h3>GK1.202</h3>
+                <p>
+                  <span id="lampu4Dot" class="green-dot"></span>
+                  <span id="lampu4StatusText">ON</span>
+                </p>
+              </div>
+            </div>
+            <label class="switch">
+              <input type="checkbox" data-location="lampu4" unchecked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+
+          <!-- Add Lamp -->
+          <div class="lamp-card add-lamp">
+            <div class="plus">＋</div>
+            <p>Add Lamp</p>
+          </div>
+        </main>
+      </main>
+
+      <!-- Bottom Navigation -->
+      <nav class="bottom-nav">
+        <a class="nav-item" href="homepage.html">
+          <i class="fa-solid fa-house" style="font-size: larger;"></i>
+        </a>
+        <a class="nav-item" href="lampcontrol.html">
+          <i class="fa-solid fa-lightbulb" style="font-size: larger;"></i>
+        </a>
+        <a class="nav-item" href="m.html">
+          <i class="fa-solid fa-fan" style="font-size: larger;"></i>
+        </a>
+        <a class="nav-item" href="setting.html">
+          <i class="fa-solid fa-gear" style="font-size: larger;"></i>
+        </a>
+      </nav>
+    </div>
+    
+    <script src="lamp.js"></script>
+
+  </body>
+</html>

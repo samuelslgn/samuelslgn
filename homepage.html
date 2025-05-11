@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Home Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="frame">
+      
+      <!-- Header -->
+      <header class="header">
+        <div class="profile">
+          <div class="avatar">
+            <img src="assets/profile.png" alt="avatar" class="avatar-img" />
+          </div>
+          <div class="greeting">
+            <h2>Good Morning</h2>
+            <p>"RBL kok Ngoding"</p>
+          </div>
+        </div>
+        <div class="status-card">
+          <div class="status_condition">
+            <div class="info_condition">
+              <strong>Temperature</strong>
+              <span> 25°C</span>
+            </div>
+            <div class="info_condition">
+              <strong>Humidity</strong>
+              <span>30%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="total_device">
+          <div class="info_device">
+            <strong
+              ><i
+                class="fas fa-lightbulb"
+                style="font-size: 18px; color: gold"
+              ></i>
+              Lamps</strong
+            >
+            <span>4 Lamps</span>
+          </div>
+          <div class="info_device">
+            <strong
+              ><i
+                class="fas fa-fan"
+                style="font-size: 18px; color: skyblue"
+              ></i>
+              Air Cons</strong
+            >
+            <span>4 AC</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Device List -->
+      <main class="devices">
+        <div class="device-card clickable" data-target="lampcontrol.html">
+          <div class="device-icon bulb"><div class="bulb">
+            <img src="assets/bulb_hp.png" alt="bulb" class="bulb-img"/>
+          </div></div>
+          <div class="device-bulb">
+            <h3>Lamp Control</h3>
+            <p><span class="green-dot"></span> 4 Lamps</p>
+          </div>
+        </div>
+       
+        <div class="device-card">
+        <div class="device-icon ac"><div class="ac">
+            <img src="assets/ac_on.png" alt="ac" class="ac-img" />
+          </div></div>
+          <div class="device-ac">
+            <h3>AC Control</h3>
+            <p><span class="green-dot"></span> 4 Air Cons</p>
+          </div>
+        </div>
+        <div class="device-card add-device">
+          <div class="plus">＋</div>
+          <p>Add Device</p>
+        </div>
+      </main>
+
+      <!-- Bottom Navigation -->
+      <nav class="bottom-nav">
+        <a class="nav-item" href="homepage.html">
+          <i class="fa-solid fa-house" style="font-size: larger;"></i>
+        </a>
+        <a class="nav-item" href="lampcontrol.html">
+          <i class="fa-solid fa-lightbulb" style="font-size: larger;"></i>
+        </a>
+        <a class="nav-item" href="m.html">
+          <i class="fa-solid fa-fan" style="font-size: larger;"></i>
+        </a>
+        <a class="nav-item" href="setting.html">
+          <i class="fa-solid fa-gear" style="font-size: larger;"></i>
+        </a>
+      </nav>
+    </div>
+    <script src="homepage.js"></script>
+    </script>
+  </body>
+</html>
